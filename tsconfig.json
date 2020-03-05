@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outFile": "./build/bundle.js",
+    "sourceMap": true,
+    "allowJs": true,
+    "lib": ["ES2015"]
+  },
+  "include": ["app/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
