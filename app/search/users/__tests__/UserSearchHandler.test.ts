@@ -6,6 +6,20 @@ class IoMock {
   close = jest.fn();
 }
 
+test('should use collection type "users"', async () => {
+  const handler = new UserSearchHandler();
+  const io = new IoMock();
+  const readFileMock = jest.fn().mockReturnValue([{}]);
+
+  // Act
+  await handler.search(io, readFileMock);
+
+  // Assert
+  // File is read
+  expect(readFileMock.mock.calls.length).toBe(1);
+  expect(readFileMock.mock.calls[0][0]).toBe('users');
+});
+
 test('should show message when no results are found', async () => {
   const handler = new UserSearchHandler();
 
