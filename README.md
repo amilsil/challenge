@@ -8,7 +8,7 @@ Usage Instructions
 
 ### Clone, Test and Execute
 
-- Clone the repo by executing `git clone git://github.com/amilsil/codechallenge` on the terminal
+- Clone the repo by executing `git clone git://github.com/amilsil/challenge` on the terminal
 - Navigate to cloned folder
 - Install node modules using `npm i`
 - Execute `npm start` in the terminal
